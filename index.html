@@ -247,61 +247,69 @@ button:hover {
         padding: 12px 22px;
     }
 }
-
+    
 /* =========================
-   MOBILE SCROLL SCRAPBOOK
+   MOBILE COMPACT FIX (NO SCROLL CHANGE)
    ========================= */
 
 @media (max-width: 768px) {
 
-    body {
-        overflow-y: auto; /* allow scrolling */
-        overflow-x: hidden;
-    }
-
-    /* Turn polaroids into a vertical feed */
+    /* Shrink polaroids */
     .polaroid {
-        position: relative;   /* IMPORTANT: disables fixed layout */
-        width: 80%;
-        max-width: 280px;
-        margin: 30px auto;
-        display: block;
+        width: 95px;           /* smaller photos */
+        padding: 8px 8px 30px 8px;
     }
 
-    /* Remove all absolute positioning */
-    .p1, .p2, .p3, .p4, .p5 {
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-        transform: rotate(0deg);
-        animation: float 5s ease-in-out infinite;
+    /* Reposition layout slightly inward so nothing cuts off */
+    .p1 {
+        top: 6%;
+        left: 4%;
+        transform: rotate(-8deg);
     }
 
-    /* Stack order feels like a story */
-    .p1 { order: 1; }
-    .p2 { order: 2; }
-    .p3 { order: 3; }
-    .p4 { order: 4; }
-    .p5 { order: 5; }
-
-    /* Center content spacing */
-    .landing {
-        position: relative;
-        height: 100vh;
+    .p2 {
+        top: 6%;
+        right: 4%;
+        transform: rotate(8deg);
     }
 
+    .p3 {
+        top: 38%;
+        left: 2%;
+        transform: rotate(5deg);
+    }
+
+    .p4 {
+        top: 38%;
+        right: 2%;
+        transform: rotate(-5deg);
+    }
+
+    .p5 {
+        bottom: 6%;
+        left: 50%;
+        transform: translateX(-50%) rotate(3deg);
+    }
+
+    /* Make center content fit better */
     .heart {
-        font-size: 70px;
+        font-size: 65px;
     }
 
     h1 {
-        font-size: 18px;
+        font-size: 16px;
+        margin-bottom: 12px;
+        padding: 0 10px;
     }
 
     button {
-        font-size: 16px;
-        padding: 12px 22px;
+        font-size: 15px;
+        padding: 10px 20px;
+    }
+
+    /* Slightly reduce floating intensity feel */
+    .polaroid {
+        animation-duration: 6s;
     }
 }
     
