@@ -221,36 +221,36 @@ button:hover {
         transform: rotate(6deg) !important;
     }
     
-  .p3, .p4, .p5 {
+  /* MATCH SPECIFICITY EXACTLY */
+    .polaroid.p3,
+    .polaroid.p4,
+    .polaroid.p5 {
+
         top: auto !important;
         left: auto !important;
         right: auto !important;
         bottom: auto !important;
     }
-    
-    /* MIDDLE ROW */
-    .p3 {
-        bottom: 10% !important;
+
+    .polaroid.p3 {
+        bottom: 12% !important;
         left: 5% !important;
-        right: auto !important;
-        top: auto !important;
         transform: rotate(4deg) !important;
     }
 
-    .p4 {
-        bottom: 10% !important;
+    .polaroid.p4 {
+        bottom: 12% !important;
         right: 5% !important;
-        left: auto !important;
-        top: auto !important;
         transform: rotate(-4deg) !important;
     }
 
-    /* BOTTOM CENTER */
-    .p5 {
+    .polaroid.p5 {
         bottom: 6% !important;
         left: 50% !important;
-        transform: translateX(-50%) rotate(3deg) !important;
+        transform: translateX(-50%) rotate(2deg) !important;
+        z-index: 2;
     }
+
 
     .heart {
         font-size: 68px;
