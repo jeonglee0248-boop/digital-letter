@@ -198,35 +198,40 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    /* Shrink polaroids */
+    /* 📸 Polaroid sizing (slightly wider for captions) */
     .polaroid {
-        width: 95px;           /* smaller photos */
-        padding: 8px 8px 30px 8px;
+        width: 130px;           /* wider = better text fit */
+        padding: 10px 10px 35px 10px;
+        animation-duration: 6s;
     }
 
-    /* Reposition layout slightly inward so nothing cuts off */
+    /* =========================
+       BETTER MOBILE SCRAPBOOK LAYOUT
+       (balanced + not cramped)
+       ========================= */
+
     .p1 {
-        top: 6%;
-        left: 4%;
-        transform: rotate(-8deg);
+        top: 4%;
+        left: 5%;
+        transform: rotate(-6deg);
     }
 
     .p2 {
-        top: 6%;
-        right: 4%;
-        transform: rotate(8deg);
+        top: 4%;
+        right: 5%;
+        transform: rotate(6deg);
     }
 
     .p3 {
-        top: 38%;
-        left: 2%;
-        transform: rotate(5deg);
+        top: 32%;
+        left: 6%;
+        transform: rotate(4deg);
     }
 
     .p4 {
-        top: 38%;
-        right: 2%;
-        transform: rotate(-5deg);
+        top: 32%;
+        right: 6%;
+        transform: rotate(-4deg);
     }
 
     .p5 {
@@ -235,22 +240,22 @@ button:hover {
         transform: translateX(-50%) rotate(3deg);
     }
 
-    /* Make center content fit better */
+    /* ❤️ Center content scaling */
     .heart {
-        font-size: 65px;
+        font-size: 68px;
     }
 
     h1 {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 12px;
         padding: 0 10px;
     }
 
     button {
         font-size: 15px;
-        padding: 10px 20px;
+        padding: 11px 22px;
     }
-
+}
     /* Slightly reduce floating intensity feel */
     .polaroid {
         animation-duration: 6s;
