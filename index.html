@@ -198,39 +198,40 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    /* 📸 Polaroid sizing (slightly wider for captions) */
+    /* 📸 Polaroid sizing (keep readable captions) */
     .polaroid {
-        width: 130px;           /* wider = better text fit */
+        width: 150px;
         padding: 10px 10px 35px 10px;
         animation-duration: 6s;
     }
 
     /* =========================
-       BETTER MOBILE SCRAPBOOK LAYOUT
-       (balanced + not cramped)
+       MOBILE SCRAPBOOK: 2 TOP + 3 BOTTOM
        ========================= */
 
+    /* TOP ROW (2 photos) */
     .p1 {
-        top: 4%;
-        left: 5%;
+        top: 6%;
+        left: 10%;
         transform: rotate(-6deg);
     }
 
     .p2 {
-        top: 4%;
-        right: 5%;
+        top: 6%;
+        right: 10%;
         transform: rotate(6deg);
     }
 
+    /* BOTTOM ROW (3 photos) */
     .p3 {
-        top: 32%;
-        left: 6%;
+        bottom: 38%;
+        left: 8%;
         transform: rotate(4deg);
     }
 
     .p4 {
-        top: 32%;
-        right: 6%;
+        bottom: 38%;
+        right: 8%;
         transform: rotate(-4deg);
     }
 
@@ -254,11 +255,6 @@ button:hover {
     button {
         font-size: 15px;
         padding: 11px 22px;
-    }
-}
-    /* Slightly reduce floating intensity feel */
-    .polaroid {
-        animation-duration: 6s;
     }
 }
     
