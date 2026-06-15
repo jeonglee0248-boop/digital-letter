@@ -198,50 +198,53 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    /* 📸 Polaroid sizing (keep readable captions) */
     .polaroid {
-        width: 150px;
-        padding: 10px 10px 35px 10px;
+        width: 120px !important;
+        padding: 10px 10px 35px 10px !important;
         animation-duration: 6s;
     }
 
-    /* =========================
-       MOBILE SCRAPBOOK: 2 TOP + 3 BOTTOM
-       ========================= */
-
-    /* TOP ROW (2 photos) */
+    /* TOP ROW */
     .p1 {
-        top: 6%;
-        left: 10%;
-        transform: rotate(-6deg);
+        top: 5% !important;
+        left: 5% !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: rotate(-6deg) !important;
     }
 
     .p2 {
-        top: 6%;
-        right: 10%;
-        transform: rotate(6deg);
+        top: 5% !important;
+        right: 5% !important;
+        left: auto !important;
+        bottom: auto !important;
+        transform: rotate(6deg) !important;
     }
 
-    /* BOTTOM ROW (3 photos) */
+    /* MIDDLE ROW */
     .p3 {
-        bottom: 38%;
-        left: 8%;
-        transform: rotate(4deg);
+        top: 38% !important;
+        left: 5% !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: rotate(4deg) !important;
     }
 
     .p4 {
-        bottom: 38%;
-        right: 8%;
-        transform: rotate(-4deg);
+        top: 38% !important;
+        right: 5% !important;
+        left: auto !important;
+        bottom: auto !important;
+        transform: rotate(-4deg) !important;
     }
 
+    /* BOTTOM CENTER */
     .p5 {
-        bottom: 6%;
-        left: 50%;
-        transform: translateX(-50%) rotate(3deg);
+        bottom: 6% !important;
+        left: 50% !important;
+        transform: translateX(-50%) rotate(3deg) !important;
     }
 
-    /* ❤️ Center content scaling */
     .heart {
         font-size: 68px;
     }
