@@ -248,6 +248,63 @@ button:hover {
     }
 }
 
+/* =========================
+   MOBILE SCROLL SCRAPBOOK
+   ========================= */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-y: auto; /* allow scrolling */
+        overflow-x: hidden;
+    }
+
+    /* Turn polaroids into a vertical feed */
+    .polaroid {
+        position: relative;   /* IMPORTANT: disables fixed layout */
+        width: 80%;
+        max-width: 280px;
+        margin: 30px auto;
+        display: block;
+    }
+
+    /* Remove all absolute positioning */
+    .p1, .p2, .p3, .p4, .p5 {
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: rotate(0deg);
+        animation: float 5s ease-in-out infinite;
+    }
+
+    /* Stack order feels like a story */
+    .p1 { order: 1; }
+    .p2 { order: 2; }
+    .p3 { order: 3; }
+    .p4 { order: 4; }
+    .p5 { order: 5; }
+
+    /* Center content spacing */
+    .landing {
+        position: relative;
+        height: 100vh;
+    }
+
+    .heart {
+        font-size: 70px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px 22px;
+    }
+}
+    
 </style>
 </head>
 
